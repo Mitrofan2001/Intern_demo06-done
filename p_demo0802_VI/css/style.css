@@ -262,6 +262,13 @@ header:after {
 }
 
 @media screen and (max-width:768px) {
+    .subtitle__text {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
     .title__text {
         font-size: 24px;
     }
@@ -397,8 +404,8 @@ header:after {
     
     .friend__subtitle {
         font-size: 16px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
