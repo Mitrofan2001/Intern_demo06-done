@@ -303,15 +303,15 @@ header:after {
 .cube__text {
     font-size: 18px;
     color: #4C90E3;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media screen and (max-width:768px) {
     .cube__text {
         font-size: 16px;
     }
-    
+
 }
 
 .blueline {
@@ -349,14 +349,13 @@ header:after {
 /*-------------------------------------------------------------*/
 .main__content__friend {
     margin-top: 52px;
-    height: 970px;
     background: #FFFFFF;
     box-shadow: 0px 0px 6px #00000029;
     border-radius: 30px;
     position: relative;
 }
 
-.main__content__friend:before{
+.main__content__friend:before {
     content: "";
     display: inline-block;
     width: 90%;
@@ -374,26 +373,40 @@ header:after {
 }
 
 @media screen and (max-width:768px) {
-    .main__content__friend:before{
+    .main__content__friend:before {
         background-image: url('../img/icon_note_m.svg');
     }
 }
-.friend__title{
-    color: #333333;
+
+.friend__title {
+    color: #434343;
     font-size: 30px;
     font-weight: bold;
 }
 
-.friend__subtitle{
-    color: #333333;
+.friend__subtitle {
+    color: #666666;
     font-size: 18px;
 }
 
-.type_img2{
-     max-width: 90%;   
+@media screen and (max-width:768px) {
+    .friend__title {
+        font-size: 24px;
+        margin: 34px 0 12px;
+    }
+    
+    .friend__subtitle {
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
-.add_friend_btn{
+.type_img2 {
+    max-width: 90%;
+}
+
+.add_friend_btn {
     background-color: #80C4AF;
     color: white;
     font-size: 16px;
@@ -402,80 +415,203 @@ header:after {
     padding: 8px;
 }
 
-.add_friend_btn:hover{
+.add_friend_btn:hover {
     color: white;
     background-color: #75b39f;
 }
 
 @media screen and (max-width:1200px) {
-    .type_img2{
-        max-width: 75%;   
+    .type_img2 {
+        max-width: 75%;
     }
 }
 
 @media screen and (max-width:992px) {
-    .type_img2{
-        max-width: 70%;   
+    .type_img2 {
+        max-width: 70%;
     }
 }
-/**********************************************************/
-
-.step__title{
-    color: #333333;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top:  40px;
-    padding-bottom: 15px;
-}
-
-
-/**********************************************************/
-.friend__hint{
-margin-top: 40px;
-position: relative;
-border-top: 2px dashed #E6E6E6;
-padding-top: 26px;
-}
-
-.friend__hint__title{
-    color: #EF6968;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.friend__hint__content{
-    color: #666666;
-    font-size: 18px;
-}
-
 /*---------------------------------------------friend_group-------------*/
-.type_group__content{
-max-width: 60%;
-margin-top: 50px;
+.type_group__content {
+    max-width: 60%;
+    margin-top: 50px;
 }
 
-.group_title{
+.group_title {
     color: #80C4AF;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.group_text{
+.group_text {
     color: #333333;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.type_group__img {
+    max-width: 40%;
+    margin-top: 45px;
+}
+
+@media screen and (max-width:768px) {
+    .type_group__content {
+        max-width: 100%;
+    }
+
+    .count1{
+        margin-top: 20px;
+    }
+
+    .grayline{
+        position: relative;
+    }
+    
+    .grayline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25px;
+        width: 95%;
+        height: 2px;
+        background-color: #707070;
+
+    }
+
+    .group_title {
+        font-size: 20px;
+    }
+    
+    .group_text {
+        font-size: 16px;
+    }
+}
+
+/**********************************************************/
+.step__title {
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .step__title {
+        font-size: 24px;
+    }
+
+    .hint{
+        font-size: 12px;
+    }
+}
+
+.step_group {
+    border: 1px solid #DDDDDD;
+    padding: 20px 16px 10px;
+    border-radius: 10px;
+    background: #F2FBFF;
+    box-shadow: 2px 2px 3px #00000029;
+    height: 100%;
+}
+
+.step_icon{
+    font-size: 14px;
+    line-height: 1;
+    font-weight: normal;
+    color: #666666;
+}
+
+.step_subtitle{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #666666;
+    text-align: start;
+    padding-left:30px;
+    position: relative;
+}
+
+.step_subtitle::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: #666;
+    z-index: 2;
+}
+
+.add_friend_btn2{
+    background-color: #80C4AF;
+    color: white;
+    font-size: 16px;
+    max-width: 140px;
+    height: 35px;
+    padding: 5px;
+}
+
+.group_content{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/**********************************************************/
+.friend__hint {
+    margin-top: 40px;
+    position: relative;
+    border-top: 2px dashed #E6E6E6;
+    padding-top: 26px;
+    margin-bottom: 27px;
+}
+
+@media screen and (max-width:768px) {
+    .friend__hint {
+        margin-top: 0;
+        padding-top: 20px;
+        border-top: none;
+    }
+}
+
+.friend__hint__title {
+    color: #EF6968;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.friend__hint__content {
+    color: #666666;
     font-size: 18px;
 }
 
-.type_group__img{
-max-width: 40%;
-margin-top: 45px;
+@media screen and (max-width:768px) {
+    .friend__hint__title {
+        font-size: 20px;
+    }
+    
+    .friend__hint__content {
+        font-size: 16px;
+    }
 }
+
 /*------precautions--------------------------------------------------------------*/
 .precautions {
     margin-top: 43px;
     padding-top: 4px;
     padding-bottom: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .precautions {
+        margin-top: 35px;
+    }
 }
 
 .precautione__content {
@@ -647,7 +783,7 @@ footer {
 .page_content {
     position: relative;
     max-width: 600px;
-    height: 164px;
+    height: 259px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #DDDDDD;
@@ -661,20 +797,25 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     color: #7c7c7c;
-
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
 
 .gift_title {
     color: #333333;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 4px;
     border-bottom: #DDDDDD solid 1px;
+}
+
+.gift_list{
+    padding-top: 35px;
 }
 
 .gift_item {
     color: #666666;
-    font-size: 18;
-    font-weight: bold;
+    font-size: 24px;
+    line-height: 2;
 }
